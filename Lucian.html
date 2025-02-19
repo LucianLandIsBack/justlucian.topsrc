@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>lucian.toplol</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="modder.lol" property="og:title" />
+      <meta content="cool " property="og:description" />
+      <link href="assets/css/anim.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/vile.css" />
+      <style>
+         #blur-box {
+         position: fixed;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         padding: 31px; 
+         width: 35%; 
+         background-color: rgba(0, 0, 0, 0.397);
+         backdrop-filter: blur(15px);
+         border-radius: 10px;
+         color: rgba(255, 255, 255, 0.774);
+         text-align: center;
+         }
+         #profile-picture {
+         width: 100px; 
+         height: 100px;
+         background-color: #ffffff00; 
+         border-radius: 50%;
+         position: absolute;
+         top:  30%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         overflow: hidden;
+         }
+         #profile-picture img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         }
+         #username {
+         font-size: 35px;
+         margin-top: 130px;
+         text-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+         }
+         #bio {
+         font-size: 18px; 
+         margin-top: 15px;
+         text-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+         }
+         #video-background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
+   filter: blur(10px); 
+   -webkit-filter: blur(10px); 
+}
+
+
+         .social-icon {
+         display: inline-block;
+         width: 32px;
+         height: 32px;
+         margin: 10px;
+         font-size: 34px;
+         text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+         transition: transform 0.3s ease-in-out; 
+         }
+         .social-icon:hover {
+         color: #ffffff;
+         transform: scale(1.2);
+         }
+         #dark-mode-toggle {
+   position: fixed;
+   top: 20px;
+   right: 20px;
+   cursor: pointer;
+   font-size: 24px;
+   color: #fff; 
+}
+
+body.dark-mode {
+   background-color: #111;
+   color: #fff;
+}
+      </style>
+      <script>
+         window.RufflePlayer = window.RufflePlayer || {};
+         window.RufflePlayer.config = { "autoplay": "on", "unmuteOverlay": "hidden" };
+      </script>
+      <script type="text/javascript" src="assets/js/ruffle.js" defer="true"></script>
+      <link href="assets/css/cosmo.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="snowfall-container"></div>
+      <div id="enter"><b class="begin glowing-text">Click To Continue</b></div>
+      <div id="blur-box">
+         <div id="profile-picture">
+            <img src="assets/media/profiles/Lucian/icon.png" alt="Profile Picture">
+         </div>
+         <div id="username">Lucian <3</div>
+         <div id="bio">Goodbye SideGames.</div>
+         <audio id="audio" src="assets/media/profiles/Lucian/song.mp3"></audio>
+         <video id="video-background" autoplay loop muted playsinline>
+            <source src="assets/media/profiles/Lucian/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+         </video>
+         
+         <script src="assets/js/audio.js"></script>
+         <script src="assets/js/disable_inspect.js"></script>
+      </div>
+   </body>
+</html>
